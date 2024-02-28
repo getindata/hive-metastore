@@ -23,6 +23,7 @@ jobs:
 
     - name: Publish Helm Charts
       run: |
+        git fetch
         git stash
         git checkout bh-pages
         git stash pop
