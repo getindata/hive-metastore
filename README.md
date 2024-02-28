@@ -14,7 +14,8 @@ The docker image is published on github repository (ghcr.io). Login to github re
 ```
 docker login ghcr.io -u [github_username]
 ```
-To install hive-metastore execute
+To install hive-metastore:
 ```
-helm install hms hive-metastore
+helm repo add getindata-hms https://getindata.github.io/hive-metastore
+helm install hms getindata-hms/hive-metastore
 ```
