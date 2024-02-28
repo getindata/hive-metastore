@@ -1,0 +1,3 @@
+theme: jekyll-theme-minimal
+title: Hive metastore (standalone)
+description: Helm chart with hive metastore (standalone). Requires Postgres DB.
