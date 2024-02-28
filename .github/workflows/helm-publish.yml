@@ -16,17 +16,15 @@ jobs:
       with:
         version: 'v3.7.0'
 
-    - name: Package Helm Charts
+    - name: Package and publish Helm Charts
       run: |
         mkdir -p charts
         helm package -d gh-charts hive-metastore
-
-    - name: Publish Helm Charts
-      run: |
         git fetch
         git stash
         git checkout bh-pages
         git stash pop
+        helm repo index .
         git add -A
         git commit -m "Helm chart release"
         git push
