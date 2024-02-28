@@ -18,8 +18,8 @@ jobs:
 
     - name: Package and publish Helm Charts
       run: |
-        mkdir -p charts
-        helm package -d gh-charts hive-metastore
+        helm package -d charts hive-metastore
+        git add -A
         git fetch
         git stash
         git checkout bh-pages
