@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: "localhost:5000/hms-test"
+  repository: "ghcr.io/getindata/hive-metastore"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "v0.0.1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -46,6 +46,7 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+# change to NodePort to allow access outside of k8s
 service:
   type: ClusterIP
   port: 9083

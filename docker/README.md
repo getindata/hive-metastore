@@ -1,7 +1,7 @@
-# Hive metastore standalone image
-Hive metastore requires metastore db. This image requires Postgres DB.
+# Hive metastore (standalone) docker image
+Requirements: postgres db.
+Hive metastore will initialize schema on startup. Expose port 9083 to connect.
 ## Required  parameters
-Hive metastore requires postgres conneciton parameters.
 | Param name | Example |
 | -----------|-------- |
 |DATABASE_PORT|5432|
