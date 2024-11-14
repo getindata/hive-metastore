@@ -22,12 +22,11 @@ helm install hms getindata-hms/hive-metastore
 Essential libraries for Flink 1.19.1
 (/opt/flink/lib)
 
-
  - https://repo1.maven.org/maven2/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3.jar
-  - https://repo1.maven.org/maven2/org/apache/hive/hive-exec/3.1.0/hive-exec-3.1.3.jar
- -  https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/flink/flink-shaded-hadoop-3-uber/3.1.1.7.0.3.0-79-7.0/flink-shaded-hadoop-3-uber-3.1.1.7.0.3.0-79-7.0.jar
- -  https://repo1.maven.org/maven2/org/apache/flink/flink-connector-hive_2.12/1.19.1/flink-connector-hive_2.12-1.19.1.jar
- -  https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
+ - https://repo1.maven.org/maven2/org/apache/hive/hive-exec/3.1.0/hive-exec-3.1.3.jar
+ - https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/flink/flink-shaded-hadoop-3-uber/3.1.1.7.0.3.0-79-7.0/flink-shaded-hadoop-3-uber-3.1.1.7.0.3.0-79-7.0.jar
+ - https://repo1.maven.org/maven2/org/apache/flink/flink-connector-hive_2.12/1.19.1/flink-connector-hive_2.12-1.19.1.jar
+ - https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
 
 Example hive-site.xml
 ```
