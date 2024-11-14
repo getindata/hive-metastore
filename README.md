@@ -67,16 +67,5 @@ Example hive-site.xml
        <name>hive.metastore.schema.verification</name>
        <value>true</value>
    </property>
-
-   <!-- Optional: Set the dialect for PostgreSQL if needed -->
-   <property>
-      <name>datanucleus.schema.autoCreateTables</name>
-      <value>false</value>
-   </property>
-
-   <property>
-      <name>datanucleus.autoCreateSchema</name>
-      <value>false</value>
-   </property>
 </configuration>
 ```
