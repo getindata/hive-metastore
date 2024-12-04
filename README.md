@@ -10,6 +10,8 @@ postgres:
   username: admin
   password: pass
 ```
+It is possible to use an existing secret from another source. The createSecret flag in values.yaml is used for this purpose.If we are using an existing secret, its name should look like this: `{{ .Release.Name }}-pgauth`. If we want the secret to be generated from the data provided in the postgres section, the `createSecret` flag in values.yaml should be set to `true`.
+
 The docker image is published on github repository (ghcr.io). Login to github repository to pull image:
 ```
 docker login ghcr.io -u [github_username]
