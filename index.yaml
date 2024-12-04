@@ -3,12 +3,12 @@ entries:
   hive-metastore:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-19T13:54:06.773166928Z"
+    created: "2024-12-04T09:12:07.98167279Z"
     description: A Helm chart for Kubernetes
-    digest: 74b8a4f6cfc12001aa900811bb9e963244fc970f50c99365cb32c8cce796b8d5
+    digest: 608b36e21e711dd967c1e3dd6e900dee9baf2cb99074d980c82ed7653556c120
     name: hive-metastore
     type: application
     urls:
     - charts/hive-metastore-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-19T13:54:06.772341214Z"
+generated: "2024-12-04T09:12:07.980397812Z"
