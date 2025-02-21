@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: "ghcr.io/getindata/hive-metastore"
+  repository: "ghcr.io/getindata/hms-v1"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.0.1"
+  tag: "1.0.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -18,11 +18,9 @@ databaseSecret:
   create: false
 
 postgres:
-  host: "postgresql"
+  host: metadata-postgres-cluster.default.svc.cluster.local
   port: 5432
   db: metastore
-  username: admin
-  password: pass
 
 serviceAccount:
   # Specifies whether a service account should be created
